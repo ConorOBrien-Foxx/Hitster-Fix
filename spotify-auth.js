@@ -1,7 +1,10 @@
 import { setLocal, getLocal } from "./local-storage.js";
 
 const clientId = "87f83568b4534541aa1d220d6a65d80e";
-const redirectUri = "http://localhost:8080"; // TODO: make more generic
+const redirectUri = 
+    window.location.toString().includes("localhost")
+        ? "http://localhost:8080"
+        : "http://conorobrien-foxx.github.io/Hitster-Fix";
 
 const OUR_HITSTER_PLAYLIST = "1iEIBawC4HzKJbFAiRimhz";
 
