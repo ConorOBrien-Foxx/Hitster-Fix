@@ -1,0 +1,26 @@
+html, button, textarea {
+    font-family: "Truculenta", sans-serif;
+}
+
+html {
+    font-size: 36px;
+}
+
+body, p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+button {
+    width: 100%;
+    height: 1.5em;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.hidden {
+    /* display: none; doesn't work on Safari, apparently */
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+    transform: scaleX(-1);
+}
